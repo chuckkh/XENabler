@@ -2,6 +2,7 @@
 
 #include <JuceHeader.h>
 #include "PluginProcessor.h"
+#include "UI/MIDIChannelModeButton.h"
 
 class WrapperTestAudioProcessorEditor : public juce::AudioProcessorEditor
 {
@@ -15,6 +16,7 @@ private:
     WrapperTestAudioProcessor& audioProcessor;
     //std::unique_ptr<AudioProcessorEditor> wrappedEditor;
     juce::Component::SafePointer<AudioProcessorEditor> wrappedEditor;
+    juce::OwnedArray<MIDIChannelModeButton> channelModeButtons[17];
 //    std::unique_ptr<AudioProcessorEditor> wrappedEditor(audioProcessor->getWrappedInstanceEditor());
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(WrapperTestAudioProcessorEditor)

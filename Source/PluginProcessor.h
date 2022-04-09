@@ -1,6 +1,7 @@
 #pragma once
 
 #include <JuceHeader.h>
+#include "XenMIDIChannel.h"
 
 class WrapperTestAudioProcessor : public juce::AudioProcessor
 {
@@ -36,7 +37,7 @@ private:
     PluginDescription descr;
     OwnedArray<PluginDescription> pluginDescriptions;
     KnownPluginList plist;
-
+    juce::OwnedArray<XenMIDIChannel> MIDIChannels[17];
 
 //    const String realFileName = "Surge.vst3";
     String realFullPathName;

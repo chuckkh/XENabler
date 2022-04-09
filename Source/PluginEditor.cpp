@@ -1,5 +1,6 @@
 #include "PluginProcessor.h"
 #include "PluginEditor.h"
+#include "UI/MIDIChannelModeButton.h"
 
 WrapperTestAudioProcessorEditor::WrapperTestAudioProcessorEditor(WrapperTestAudioProcessor& p)
     : AudioProcessorEditor(&p), audioProcessor(p)//, wrappedEditor(audioProcessor.getWrappedInstanceEditor())

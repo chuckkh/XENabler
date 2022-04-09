@@ -1,6 +1,22 @@
 #include "PluginProcessor.h"
 #include "PluginEditor.h"
 
+/*
+Xen::PluginNamer::PluginNamer()
+{
+    File myFile = File::getSpecialLocation(File::currentApplicationFile);
+    pluginName = myFile.getFileNameWithoutExtension();
+
+}
+
+const char* Xen::PluginNamer::getName()
+{
+    return pluginName.toRawUTF8();
+}
+*/
+
+
+
 WrapperTestAudioProcessor::WrapperTestAudioProcessor()
 #ifndef JucePlugin_PreferredChannelConfigurations
     : AudioProcessor(BusesProperties()
@@ -64,6 +80,7 @@ WrapperTestAudioProcessor::~WrapperTestAudioProcessor()
 const juce::String WrapperTestAudioProcessor::getName() const
 {
     return JucePlugin_Name;
+    //return pluginNamer.getName();
 }
 
 bool WrapperTestAudioProcessor::acceptsMidi() const
@@ -176,3 +193,4 @@ juce::AudioProcessor* JUCE_CALLTYPE createPluginFilter()
 {
     return new WrapperTestAudioProcessor();
 }
+

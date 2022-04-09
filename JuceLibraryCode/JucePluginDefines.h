@@ -39,6 +39,8 @@
 #endif
 #ifndef  JucePlugin_Name
  #define JucePlugin_Name                   "Xenabler"
+ //#define JucePlugin_Name                     pluginNamer.pluginNamed
+
 #endif
 #ifndef  JucePlugin_Desc
  #define JucePlugin_Desc                   "Xenabler"
