@@ -5,16 +5,7 @@
 
 class MIDIChannelModeButton : juce::TextButton
 {
-    MIDIChannelModeButton()
-      : TextButton ("OFF")
-    {
-      setSize (10, 24);
-    }
-
-    ~MIDIChannelModeButton()
-    {
-    }
-
+    
 
 private:
     juce::uint16 channelNumber;
