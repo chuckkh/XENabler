@@ -3,9 +3,20 @@
 <JUCERPROJECT id="lXKNeY" name="Xenabler" projectType="audioplug" jucerFormatVersion="1"
               pluginCharacteristicsValue="pluginIsSynth,pluginWantsMidiIn"
               pluginManufacturer="Chuckk Hubbard" pluginAUMainType="'augn'"
-              companyName="Chuckk Hubbard">
+              companyName="Chuckk Hubbard" companyWebsite="www.cloudintheheads.com"
+              pluginFormats="buildAU,buildLV2,buildStandalone,buildVST3">
   <MAINGROUP id="iSUvZo" name="Xenabler">
+    <GROUP id="{FF19601A-E4EE-FC0E-79D2-673D7FA648DB}" name="UI">
+      <FILE id="keeUmV" name="MIDIChannelModeButton.cpp" compile="1" resource="0"
+            file="Source/UI/MIDIChannelModeButton.cpp"/>
+      <FILE id="qb1ACH" name="MIDIChannelModeButton.h" compile="0" resource="0"
+            file="Source/UI/MIDIChannelModeButton.h"/>
+    </GROUP>
     <GROUP id="{768796EE-AC93-1C98-CF24-D98A6C404DC8}" name="Source">
+      <FILE id="aCUQUt" name="XenMIDIChannel.cpp" compile="1" resource="0"
+            file="Source/XenMIDIChannel.cpp"/>
+      <FILE id="g5rpgb" name="XenMIDIChannel.h" compile="0" resource="0"
+            file="Source/XenMIDIChannel.h"/>
       <FILE id="g72nxl" name="PluginProcessor.cpp" compile="1" resource="0"
             file="Source/PluginProcessor.cpp"/>
       <FILE id="xAN8lE" name="PluginProcessor.h" compile="0" resource="0"
@@ -24,18 +35,18 @@
         <CONFIGURATION isDebug="0" name="Release" targetName="Xenabler"/>
       </CONFIGURATIONS>
       <MODULEPATHS>
-        <MODULEPATH id="juce_audio_basics" path="../../JUCE/modules"/>
-        <MODULEPATH id="juce_audio_devices" path="../../JUCE/modules"/>
-        <MODULEPATH id="juce_audio_formats" path="../../JUCE/modules"/>
-        <MODULEPATH id="juce_audio_plugin_client" path="../../JUCE/modules"/>
-        <MODULEPATH id="juce_audio_processors" path="../../JUCE/modules"/>
-        <MODULEPATH id="juce_audio_utils" path="../../JUCE/modules"/>
-        <MODULEPATH id="juce_core" path="../../JUCE/modules"/>
-        <MODULEPATH id="juce_data_structures" path="../../JUCE/modules"/>
-        <MODULEPATH id="juce_events" path="../../JUCE/modules"/>
-        <MODULEPATH id="juce_graphics" path="../../JUCE/modules"/>
-        <MODULEPATH id="juce_gui_basics" path="../../JUCE/modules"/>
-        <MODULEPATH id="juce_gui_extra" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="..\..\JUCE-for-Rationale\modules"/>
+        <MODULEPATH id="juce_audio_devices" path="..\..\JUCE-for-Rationale\modules"/>
+        <MODULEPATH id="juce_audio_formats" path="..\..\JUCE-for-Rationale\modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../JUCE-for-Rationale/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../JUCE-for-Rationale/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../JUCE-for-Rationale/modules"/>
+        <MODULEPATH id="juce_core" path="../../JUCE-for-Rationale/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../JUCE-for-Rationale/modules"/>
+        <MODULEPATH id="juce_events" path="../../JUCE-for-Rationale/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../JUCE-for-Rationale/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../JUCE-for-Rationale/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../JUCE-for-Rationale/modules"/>
       </MODULEPATHS>
     </VS2019>
   </EXPORTFORMATS>
